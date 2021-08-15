@@ -1,0 +1,31 @@
+#/usr/local/bin
+
+anew                 deduplicate   gf           nokogiri              ruby-parse               unimap
+arjun                DNScewl       hakrawler    nuclei                ruby-rewrite             update
+assetfinder          dnsrecon      htmldiff     phantomjs             shuffledns               wafw00f
+blc                  dnsvalidator  httprobe     qsreplace             stackprof                wappalyzer
+broken-link-checker  dnsx          interlace    racc                  stackprof-flamegraph.pl  waybackurls
+bundle               duplicut      js-beautify  rcn                   stackprof-gprof2dot.py   wscat
+bundler              editorconfig  knockpy      restfulHarvest        subfinder
+chardetect           ffuf          kr           rspec                 testserver
+commix               findomain     ldiff        rubocop               theHarvester
+dalfox               gau           netaddr      ruby-memory-profiler  tqdm
+
+# ~//
+
+apkleaks               findomain       LFISuite                         R3C0Nizer                 Templates
+Arjun                  findom-xss      LinkFinder                       rcn                       test.py
+Automation-Nuclei      Findredir3ct    logs                             Recon                     thinclient_drives
+bbht                   getcname.sh     Mobile-Security-Framework-MobSF  reconftw                  tiny-recon.sh
+BlackDragon            GitDorker       Music                            reconizer                 tools
+byp4xx.sh              gitGraber       nuclei                           requirements.txt          Tools
+cent                   go              nuclei-templates                 resolvers.txt             update
+cent-nuclei-templates  hacks           Oralyzer                         rustscan_2.0.1_amd64.deb  urls.txt
+custom-templates       HTB             ParamSpider                      scant3r                   Videos
+Desktop                iet             Payloads                         SSRFmap                   whoami
+Documents              Interlace       Pictures                         SubDomainizer             XSStrike
+dotfiles.txt           JupyterPen      ProtoP                           subfinder                 XXEinjector
+Downloads              knock           Public                           Sudomy
+duplicut               knockpy_report  QuickXSS                         svn-extractor
+
+## Still, there are some pip installed items. Have to mention them!
