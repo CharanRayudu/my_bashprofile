@@ -79,7 +79,3 @@ nscan(){ #nuclei-templates scan on the Reconed URLS
 sort -u /home/andr0idh4ppi3r/Recon/$1/urls.txt | nuclei -silent -t ~/cent-nuclei-templates/ -severity critical,high,medium,low
 }
 
-# Golang vars
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
