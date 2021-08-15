@@ -11,6 +11,7 @@ chardetect           ffuf          kr           rspec                 testserver
 commix               findomain     ldiff        rubocop               theHarvester
 dalfox               gau           netaddr      ruby-memory-profiler  tqdm
 
+
 # ~//
 
 apkleaks               findomain       LFISuite                         R3C0Nizer                 Templates
@@ -27,5 +28,18 @@ Documents              Interlace       Pictures                         SubDomai
 dotfiles.txt           JupyterPen      ProtoP                           subfinder                 XXEinjector
 Downloads              knock           Public                           Sudomy
 duplicut               knockpy_report  QuickXSS                         svn-extractor
+
+
+/go/bin/
+
+amass                   crobat       findomain-linux    gospider   interactsh-client  ProtoP          unfurl
+analyticsrelationships  dalfox       gau                gotator    Key-Checker        puredns         waybackunifier
+anew                    deduplicate  gauplus            Gxss       knockknock         qsreplace       waybackurls
+aquatone                dirdar       gdn                hakrawler  mildew             resolveDomains
+assetfinder             dnsx         gf                 hakrevdns  naabu              shuffledns
+cent                    examples     github-endpoints   haktrails  notify             subfinder
+cf-check                feroxbuster  github-subdomains  httprobe   nuclei             subjs
+crlfuzz                 ffuf         Git-Secret         httpx      page-fetch         ugly-duckling
+
 
 ## Still, there are some pip installed items. Have to mention them!
