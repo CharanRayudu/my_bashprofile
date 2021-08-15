@@ -78,4 +78,3 @@ curl -s https://crt.sh/?q\=%.$1\&output\=json | jq -r '.[].name_value' | sed 's/
 nscan(){ #nuclei-templates scan on the Reconed URLS
 sort -u /home/andr0idh4ppi3r/Recon/$1/urls.txt | nuclei -silent -t ~/cent-nuclei-templates/ -severity critical,high,medium,low
 }
-
