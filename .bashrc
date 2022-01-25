@@ -1,11 +1,12 @@
+alias please='sudo'
+
 source "$HOME/.cargo/env"
-PATH=$PATH:/home/andr0idh4ppi3r/omnetpp-5.6.2/bin
 
 # Golang vars
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
-
+export CHAOS_KEY=97f6445660321b71387e088dbbc8bb5e77a0d48240519ed5b5e0e607c378e687
 
 
 #----- AWS -------
@@ -54,7 +55,7 @@ curl https://certspotter.com/api/v0/certs\?domain\=$1 | jq '.[].dns_names[]' | s
 } #h/t Jobert Abma
 
 ipinfo(){
-curl http://ipinfo.io/$1
+curl https://ipinfo.io/$1
 }
 
 
@@ -72,9 +73,24 @@ nc -l -n -vv -p $1 -k
 }
 
 crtshdirsearch(){ #gets all domains from crtsh, runs httprobe and then dir bruteforcers
-curl -s https://crt.sh/?q\=%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | httprobe -c 50 | grep https | xargs -n1 -I{} python3 ~/tools/dirsearch/dirsearch.py -u {} -e $2 -t 50 -b
+curl -s https://crt.sh/?q\=%.$1\&output\=json | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u | httprobe -c 50 | grep https | xargs -n1 -I{} python3 ~/tools/dirsearch/dirsearch.py -x 502,503 -u {} -t 50 -H 'X-FORWARDED-FOR: 127.0.0.1' -b -r
+}
+
+crtliner(){ #Made by jonathon scott to scrape subdomains
+read -r -p "Get All Subdomains: " input; curl "https://crt.sh/?q=${input}" | tr '<BR>' '\n' | grep -E ".gov|.mil|.com|.us|.net|.biz|.io|.org" | sed '/href/d;/crt.sh/d;/Type:/d;/[A-Z]=/d;/ /d' | LC_ALL=C sort | LC_ALL=C uniq
 }
 
 nscan(){ #nuclei-templates scan on the Reconed URLS
-sort -u /home/andr0idh4ppi3r/Recon/$1/urls.txt | nuclei -silent -t ~/cent-nuclei-templates/ -severity critical,high,medium,low
+sort -u ~/Recon/$1/urls.txt | nuclei -silent -t ~/nuclei-templates/ -severity critical,high,medium,low -o ~/Recon/$1/nscan.txt
 }
+
+sslscan(){
+cd testssl.sh
+./testssl.sh $1
+cd
+}
+
+# Golang vars
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
