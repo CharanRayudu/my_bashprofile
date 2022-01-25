@@ -1,45 +1,59 @@
 #/usr/local/bin
 
-anew                 deduplicate   gf           nokogiri              ruby-parse               unimap
-arjun                DNScewl       hakrawler    nuclei                ruby-rewrite             update
-assetfinder          dnsrecon      htmldiff     phantomjs             shuffledns               wafw00f
-blc                  dnsvalidator  httprobe     qsreplace             stackprof                wappalyzer
-broken-link-checker  dnsx          interlace    racc                  stackprof-flamegraph.pl  waybackurls
-bundle               duplicut      js-beautify  rcn                   stackprof-gprof2dot.py   wscat
-bundler              editorconfig  knockpy      restfulHarvest        subfinder
-chardetect           ffuf          kr           rspec                 testserver
-commix               findomain     ldiff        rubocop               theHarvester
-dalfox               gau           netaddr      ruby-memory-profiler  tqdm
+anew                 dalfox          gf           jupyter-console       nokogiri     restfulHarvest           theHarvester
+arjun                deduplicate     hakrawler    jupyter-kernel        nuclei       rspec                    tqdm
+assetfinder          DNScewl         helm2        jupyter-kernelspec    phantomjs    rubocop                  unimap
+authz0               dnsrecon        htmldiff     jupyter-migrate       pm2          ruby-memory-profiler     update
+bfac                 dnsvalidator    httprobe     jupyter-qtconsole     pm2-dev      ruby-parse               wafw00f
+blc                  dnsx            interlace    jupyter-run           pm2-docker   ruby-rewrite             wappalyzer
+broken-link-checker  docker-compose  iptest       jupyter-troubleshoot  pm2-runtime  shuffledns               waybackurls
+bundle               duplicut        iptest3      knockpy               ppfuzz       stackprof                wscat
+bundler              editorconfig    ipython      kr                    pygmentize   stackprof-flamegraph.pl
+chardetect           ffuf            ipython3     kubectl               qsreplace    stackprof-gprof2dot.py
+commix               findomain       js-beautify  ldiff                 racc         subfinder
+crlf                 gau             jupyter      netaddr               rcn          testserver
 
 
 # ~//
 
-apkleaks               findomain       LFISuite                         R3C0Nizer                 Templates
-Arjun                  findom-xss      LinkFinder                       rcn                       test.py
-Automation-Nuclei      Findredir3ct    logs                             Recon                     thinclient_drives
-bbht                   getcname.sh     Mobile-Security-Framework-MobSF  reconftw                  tiny-recon.sh
-BlackDragon            GitDorker       Music                            reconizer                 tools
-byp4xx.sh              gitGraber       nuclei                           requirements.txt          Tools
-cent                   go              nuclei-templates                 resolvers.txt             update
-cent-nuclei-templates  hacks           Oralyzer                         rustscan_2.0.1_amd64.deb  urls.txt
-custom-templates       HTB             ParamSpider                      scant3r                   Videos
-Desktop                iet             Payloads                         SSRFmap                   whoami
-Documents              Interlace       Pictures                         SubDomainizer             XSStrike
-dotfiles.txt           JupyterPen      ProtoP                           subfinder                 XXEinjector
-Downloads              knock           Public                           Sudomy
-duplicut               knockpy_report  QuickXSS                         svn-extractor
+403bypass              getcname.sh                      Music                                           shell.phtml
+apkleaks               GitDorker                        nerdbug                                         smuggler
+Arjun                  gitGraber                        nuclei                                          sqlmap
+Automation-Nuclei      go                               nuclei-templates                                SSRFmap
+bbht                   Goliad                           Oralyzer                                        SubDomainizer
+BBTz                   hacks                            package-lock.json                               subfinder
+bfac                   hash                             ParamSpider                                     Sudomy
+BlackDragon            HTB                              Payloads                                        svn-extractor
+cent                   hydra.restore                    Pictures                                        Templates
+cent-nuclei-templates  igrsdirsearch                    ppfuzz-v1.0.0-aarch64-unknown-linux-gnu.tar.gz  temp.py
+chaospy                Interlace                        ProtoP                                          testssl.sh
+clickjackingpoc        jonah.hash                       Public                                          thinclient_drives
+Clickjacking-Tester    joomblah.py                      QuickXSS                                        THM
+Corsy                  JSFinder                         R3C0Nizer                                       tiny-recon.sh
+CSRF-scanner           JupyterPen                       rcn                                             tools
+custom-templates       karma_v2                         Recon                                           Tools
+Desktop                Keycloak-12.0.1-CVE-2020-10770   reconftw                                        torshammer
+Documents              knock                            reconizer                                       tplmap
+dotfiles.txt           knockpy_report                   rengine                                         update
+Downloads              L3MON                            requirements.txt                                Videos
+duplicut               LFISuite                         resolvers.txt                                   whoami
+exploit.py             log4j-scan                       revs.php                                        xsrfprobe-output
+findomain              logs                             rustscan_2.0.1_amd64.deb                        XSStrike
+findom-xss             lsh                              scant3r                                         XXEinjector
+Findredir3ct           Mobile-Security-Framework-MobSF  secretfinder
 
 
 /go/bin/
 
-amass                   crobat       findomain-linux    gospider   interactsh-client  ProtoP          unfurl
-analyticsrelationships  dalfox       gau                gotator    Key-Checker        puredns         waybackunifier
-anew                    deduplicate  gauplus            Gxss       knockknock         qsreplace       waybackurls
-aquatone                dirdar       gdn                hakrawler  mildew             resolveDomains
-assetfinder             dnsx         gf                 hakrevdns  naabu              shuffledns
-cent                    examples     github-endpoints   haktrails  notify             subfinder
-cf-check                feroxbuster  github-subdomains  httprobe   nuclei             subjs
-crlfuzz                 ffuf         Git-Secret         httpx      page-fetch         ugly-duckling
+amass                   crlfuzz      ffuf               Git-Secret  httpx              notify          subfinder
+analyticsrelationships  crobat       findomain-linux    gospider    interactsh-client  nuclei          subjs
+anew                    dalfox       gau                gotator     interactsh-server  page-fetch      ugly-duckling
+aquatone                deduplicate  gauplus            Gxss        jaeles             ProtoP          unfurl
+assetfinder             dirdar       gdn                hakrawler   Key-Checker        puredns         wadl-dumper
+cent                    dnsx         gf                 hakrevdns   knockknock         qsreplace       waybackunifier
+cf-check                examples     github-endpoints   haktrails   mildew             resolveDomains  waybackurls
+chaos                   feroxbuster  github-subdomains  httprobe    naabu              shuffledns
 
 
 ## Still, there are some pip installed items. Have to mention them!
+
